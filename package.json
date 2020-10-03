@@ -1,5 +1,4 @@
 {
-  "homepage": "https://Developer-TICR.github.io/TECNOLOGIACOSTARICA",
   "name": "ticr",
   "version": "1.0.0",
   "description": "IT STORE",
@@ -22,8 +21,9 @@
     "build": "rm -rf dist && babel backend -d dist",
     "heroku-postbuild": "npm run build && cd frontend && npm install && npm run build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages-d build"
   },
+  "homepage": "https://github.com/Developer-TICR/TECNOLOGIACOSTARICA",
   "engines": {
     "node": "12.4.0",
     "npm": "6.9.0"
