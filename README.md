@@ -1,4 +1,4 @@
 # TECNOLOGIACOSTARICA
 Proyecto Tienda Tecnologia CostaRica
-Creada:E. Briceño
+Creada: E. Briceño
 Pais-> Costa Rica.
