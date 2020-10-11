@@ -16,7 +16,6 @@ import ProfileScreen from './Screens/ProfileScreen';
 import OrdersScreen from './Screens/OrdersScreen';
 
 function App() {
-
   const userSignin = useSelector(state => state.userSignin);
   const { userInfo } = userSignin;
 
