@@ -4,12 +4,13 @@ import {
 } from "../constants/productConstants"
 import Axios from "axios";
 
+import API from './api';
+
 const listProducts = (category = '', searchKeyword = '', sortOrder = '') => async (dispatch) => {
   try {
 
     dispatch({ type: PRODUCT_LIST_REQUEST });
-    console.log('shahafasdfa')
-    const { data } = await Axios.get("https://tecnologiacostarica.herokuapp.com/api/products?category=" + category +
+    const { data } = await Axios.get("/api/products?category=" + category +
       "&searchKeyword=" + searchKeyword + "&sortOrder=" + sortOrder);
     dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
   }

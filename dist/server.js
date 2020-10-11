@@ -31,7 +31,12 @@ _mongoose["default"].connect(mongodbUrl, {
 var cors = require('cors');
 
 var app = (0, _express["default"])();
-app.use(cors());
+var corsOptions = {
+  origin: 'https://tecnologiacostarica.com',
+  optionsSuccessStatus: 200 // For legacy browser support
+
+};
+app.use(cors(corsOptions));
 app.use(_bodyParser["default"].json());
 app.use("/api/users", _userRoute["default"]);
 app.use("/api/products", _productRoute["default"]);
