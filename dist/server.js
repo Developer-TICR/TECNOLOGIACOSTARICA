@@ -49,4 +49,5 @@ app.get("/api/config/paypal", function (req, res) {
 
 app.listen(5000, function () {
   console.log("Server started at http://localhost:5000");
+  console.log('Bienvenido Esteban a TCR!');
 });
