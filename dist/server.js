@@ -28,12 +28,10 @@ _mongoose["default"].connect(mongodbUrl, {
   return console.log(error.reason);
 });
 
+var cors = require('cors');
+
 var app = (0, _express["default"])();
-app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
+app.use(cors());
 app.use(_bodyParser["default"].json());
 app.use("/api/users", _userRoute["default"]);
 app.use("/api/products", _productRoute["default"]);
